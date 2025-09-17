@@ -13,7 +13,17 @@ async function getCharacters() {
 	}
 }
 
-// Appel de la fonction et affichage dans la console
+// Appel de la fonction et affichage dynamique dans la liste
 getCharacters().then(data => {
-    console.log('Personnages récupérés :', data);
+	if (data && Array.isArray(data)) {
+		const list = document.getElementById('character-list');
+		list.innerHTML = '';
+		data.forEach(character => {
+			const li = document.createElement('li');
+			li.textContent = character.name || character;
+			list.appendChild(li);
+		});
+	} else {
+		console.error('Aucune donnée de personnage trouvée.');
+	}
 });
