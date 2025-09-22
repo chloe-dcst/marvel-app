@@ -1,15 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import characters from './data/characters.json'
 import './App.css'
 
 function App() {
   return (
     <div>
-      <h1>Hello World from react with JSX</h1>
+      <h1>Marvel App</h1>
       <ul>
-        <li>Beast</li>
-        <li>Captain America</li>
-        <li>Deadpool</li>
+        {characters.map((character) => (
+          <li key={character.name}>{character.name}</li>
+        ))}
       </ul>
     </div>
   );
