@@ -1,20 +1,15 @@
-import characters from './data/characters.json';
-import NumberOfCharacters from './components/NumberOfCharacters';
-import CharactersList from './components/CharactersList'
-import AboutPage from './pages/AboutPage';
-import ContactPage from './pages/ContactPage';
-import CharactersPage from './pages/CharactersPage';
-
 import './App.css'
+import { createBrowserRouter, RouterProvider } from "react-router";
+import routes from './routes';
 
-
+// router to navigate through the app
+const router = createBrowserRouter(routes);
 
 function App() {
   return (
-    <div>
-      {/* <h1>Marvel App</h1> */
-      <CharactersPage />}
-    </div>
+    <>
+      <RouterProvider router={router} />
+    </>
   );
 }
 
