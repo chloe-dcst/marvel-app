@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 
 function AboutPage() {
   useEffect(() => {
-    document.title = 'About - Marvel App';
+    document.title = 'About | Marvel App';
   }, []);
 
   return (
