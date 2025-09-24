@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Composant pour afficher la liste des personnages
-function CharactersList({ characters }) {
-  if (!characters || characters.length === 0) {
+function CharactersList({ characters = [] }) {
+  if (characters.length === 0) {
     return <p>Aucun personnage trouvé.</p>;
   }
 
