@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router';
 
 // Composant pour afficher la liste des personnages
 function CharactersList({ characters = [] }) {
@@ -10,7 +11,9 @@ function CharactersList({ characters = [] }) {
     <ul id="characters">
       {characters.map((character, index) => (
         <li key={character.id || index}>
-          {character.name || character}
+          <Link to={`/characters/${character.id}`}>
+            {character.name || character}
+          </Link>
         </li>
       ))}
     </ul>

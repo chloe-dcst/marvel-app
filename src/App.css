@@ -33,7 +33,7 @@ h1 {
 h2 {
   color: #333;
   background: #f4f4f4;
-  text-align: left;
+  text-align: center;
   font-weight: bold;
 }
 
@@ -52,14 +52,19 @@ li {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   color: #333;
-  text-align: left;
+  text-align: center;
+}
+
+li a {
+    color: #333;
+    text-decoration: none;
 }
 
 /* Navigation */
 nav {
   background: #444;
   padding: 10px;
-  text-align: left;
+  text-align: center;
 }
 
 nav ul {
