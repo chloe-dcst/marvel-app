@@ -17,5 +17,9 @@ export const getCharacters = () => {
  * @returns 
  */
 export const getCharacterById = (id) => {
-  return characters.find(character => character.id === id);
+  const found = characters.find(character => character.id === id);
+  if (!found) {
+    throw new Error(`Character with id ${id} not found`);
+  }
+  return found;
 }
