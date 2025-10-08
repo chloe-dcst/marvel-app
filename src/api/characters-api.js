@@ -1,14 +1,25 @@
-import characters from '../data/characters.json';
 
-// Fonction pour récupérer la liste des personnages
-export const getCharacters = async () => {
-  // Simule un appel API asynchrone
-  return Promise.resolve(characters);
+// src/api/characters-api.js
+
+import characters from '../data/characters.json'
+
+/**
+ * returns the list of characters
+ * @returns 
+ */
+export const getCharacters = () => {
+  return characters;
 }
 
-// Fonction pour récupérer un personnage par son id
-export const getCharacterById = async (id) => {
-  // Simule un appel API asynchrone
-  const character = characters.find(character => character.id === id);
-  return Promise.resolve(character);
+/**
+ * returns a character by id
+ * @param {*} id 
+ * @returns 
+ */
+export const getCharacterById = (id) => {
+  const found = characters.find(character => character.id === id);
+  if (!found) {
+    throw new Error(`Character with id ${id} not found`);
+  }
+  return found;
 }
