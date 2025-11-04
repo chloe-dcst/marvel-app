@@ -48,9 +48,23 @@ describe('CharacterDetail component', () => {
         const imgs = screen.queryAllByRole('img');
         expect(imgs).toHaveLength(0);
 
+        // queryByRole with name should return null when no image with that alt exists
+        const imgByName = screen.queryByRole('img', { name: character.name });
+        expect(imgByName).toBeNull();
+
         // Les informations textuelles doivent quand même être présentes
         expect(screen.getByRole('heading', { level: 2 })).toHaveTextContent('NoImage Hero');
         const idLabel = screen.getByText('ID:');
         expect(idLabel.parentElement).toHaveTextContent(`ID: ${character.id}`);
+    });
+
+    test("affiche 'Personnage non trouvé.' quand aucun personnage n'est fourni", () => {
+        render(<CharacterDetail />);
+
+        // Le message de non-trouvaille doit être affiché
+        expect(screen.getByText("Personnage non trouvé.")).toBeInTheDocument();
+
+        // Il ne doit pas y avoir d'images
+        expect(screen.queryAllByRole('img')).toHaveLength(0);
     });
 });
