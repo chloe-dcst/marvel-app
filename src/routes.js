@@ -9,8 +9,23 @@ import { getCharacters, getCharacterById } from './api/characters-api';
 // routes of the application
 
 // Loader function for characters
-const charactersLoader = async () => {
-  const characters = await getCharacters();
+// Accepts the router loader args so we can read request.url search params
+export const charactersLoader = async ({ request } = {}) => {
+  // default params
+  let sort = 'name';
+  let order = 'asc';
+
+  try {
+    if (request && request.url) {
+      const url = new URL(request.url);
+      sort = url.searchParams.get('sort') || sort;
+      order = url.searchParams.get('order') || order;
+    }
+  } catch (e) {
+    // ignore and use defaults
+  }
+
+  const characters = await getCharacters({ sort, order });
   return { characters };
 }
 
@@ -22,7 +37,8 @@ const routes = [
       {
         // main page
         index: true,
-        loader: async () => { return charactersLoader(); },
+        // pass the loader directly so React Router will call it with { request }
+        loader: charactersLoader,
         Component: CharactersPage
       },
       {
@@ -38,8 +54,10 @@ const routes = [
       {
         path: "/characters/:id",
         Component: CharacterDetailPage,
-        loader: async ({ params }) => {
-          const character = await getCharacterById(params.id);
+        loader: async ({ params } = {}) => {
+          // generate id from params into a variable before using it
+          const id = params && params.id ? params.id : '';
+          const character = await getCharacterById(id);
           return { character };
         }
       },

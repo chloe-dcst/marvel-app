@@ -60,6 +60,10 @@ li a {
     text-decoration: none;
 }
 
+label{
+  color : #333;
+}
+
 /* Navigation */
 nav {
   background: #444;
