@@ -10,7 +10,14 @@
         }
         ,
         "group": "X-Men",
-        "appearances": 120
+        "appearances": 120,
+        "capacities": {
+            "intelligence": 85,
+            "strength": 65,
+            "speed": 60,
+            "endurance": 70,
+            "agility": 75
+        }
     },
     {
         "id": "1009220",
@@ -23,7 +30,14 @@
         }
         ,
         "group": "Avengers",
-        "appearances": 300
+        "appearances": 300,
+        "capacities": {
+            "intelligence": 90,
+            "strength": 80,
+            "speed": 70,
+            "endurance": 85,
+            "agility": 75
+        }
     },
     {
         "id": "1009268",
@@ -35,7 +49,14 @@
         }
         ,
         "group": "Solo",
-        "appearances": 200
+        "appearances": 200,
+        "capacities": {
+            "intelligence": 80,
+            "strength": 70,
+            "speed": 85,
+            "endurance": 75,
+            "agility": 80
+        }
     },
     {
         "id": "1010743",
@@ -48,7 +69,14 @@
         }
         ,
         "group": "Guardians",
-        "appearances": 80
+        "appearances": 80,
+        "capacities": {
+            "intelligence": 50,
+            "strength": 60,
+            "speed": 55,
+            "endurance": 65,
+            "agility": 50
+        }
     },
     {
         "id": "1009351",
@@ -61,7 +89,14 @@
         }
         ,
         "group": "Avengers",
-        "appearances": 280
+        "appearances": 280,
+        "capacities": {
+            "intelligence": 70,
+            "strength": 95,
+            "speed": 60,
+            "endurance": 95,
+            "agility": 50
+        }
     },
     {
         "id": "1009368",
@@ -74,7 +109,14 @@
         }
         ,
         "group": "Avengers",
-        "appearances": 270
+        "appearances": 270,
+        "capacities": {
+            "intelligence": 95,
+            "strength": 65,
+            "speed": 70,
+            "endurance": 60,
+            "agility": 70
+        }
     },
     {
         "id": "1010744",
@@ -87,7 +129,14 @@
         }
                 ,
                 "group": "Guardians",
-                "appearances": 70
+                "appearances": 70,
+                "capacities": {
+                    "intelligence": 60,
+                    "strength": 50,
+                    "speed": 65,
+                    "endurance": 55,
+                    "agility": 70
+                }
     },
     {
         "id": "1009592",
@@ -100,7 +149,14 @@
         }
                 ,
                 "group": "Cosmic",
-                "appearances": 90
+                "appearances": 90,
+                "capacities": {
+                    "intelligence": 85,
+                    "strength": 70,
+                    "speed": 60,
+                    "endurance": 75,
+                    "agility": 60
+                }
     },
     {
         "id": "1009697",
@@ -112,7 +168,14 @@
         }
         ,
         "group": "Cosmic",
-        "appearances": 150
+        "appearances": 150,
+        "capacities": {
+            "intelligence": 98,
+            "strength": 95,
+            "speed": 70,
+            "endurance": 90,
+            "agility": 55
+        }
     },
     {
         "id": "1009663",
@@ -124,7 +187,14 @@
         }
         ,
         "group": "Avengers",
-        "appearances": 250
+        "appearances": 250,
+        "capacities": {
+            "intelligence": 80,
+            "strength": 90,
+            "speed": 75,
+            "endurance": 85,
+            "agility": 70
+        }
     },
     {
         "id": "1009718",
@@ -136,6 +206,13 @@
         }
         ,
         "group": "X-Men",
-        "appearances": 310
+        "appearances": 310,
+        "capacities": {
+            "intelligence": 70,
+            "strength": 85,
+            "speed": 80,
+            "endurance": 75,
+            "agility": 85
+        }
     }
 ]
