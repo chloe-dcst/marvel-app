@@ -8,6 +8,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/80/511a79a0451a3",
             "extension": "jpg"
         }
+        ,
+        "group": "X-Men",
+        "appearances": 120
     },
     {
         "id": "1009220",
@@ -18,6 +21,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/537ba56d31087",
             "extension": "jpg"
         }
+        ,
+        "group": "Avengers",
+        "appearances": 300
     },
     {
         "id": "1009268",
@@ -27,6 +33,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/90/5261a86cacb99",
             "extension": "jpg"
         }
+        ,
+        "group": "Solo",
+        "appearances": 200
     },
     {
         "id": "1010743",
@@ -37,6 +46,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/10/526033c8b474a",
             "extension": "jpg"
         }
+        ,
+        "group": "Guardians",
+        "appearances": 80
     },
     {
         "id": "1009351",
@@ -47,6 +59,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/5/a0/538615ca33ab0",
             "extension": "jpg"
         }
+        ,
+        "group": "Avengers",
+        "appearances": 280
     },
     {
         "id": "1009368",
@@ -57,6 +72,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/c0/527bb7b37ff55",
             "extension": "jpg"
         }
+        ,
+        "group": "Avengers",
+        "appearances": 270
     },
     {
         "id": "1010744",
@@ -67,6 +85,9 @@
           "path": "http://i.annihil.us/u/prod/marvel/i/mg/9/b0/50fec1e49298a",
           "extension": "jpg"
         }
+                ,
+                "group": "Guardians",
+                "appearances": 70
     },
     {
         "id": "1009592",
@@ -77,6 +98,9 @@
           "path": "http://i.annihil.us/u/prod/marvel/i/mg/3/50/527bb6490a176",
           "extension": "jpg"
         }
+                ,
+                "group": "Cosmic",
+                "appearances": 90
     },
     {
         "id": "1009697",
@@ -86,6 +110,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/6/40/5274137e3e2cd",
             "extension": "jpg"
         }
+        ,
+        "group": "Cosmic",
+        "appearances": 150
     },
     {
         "id": "1009663",
@@ -95,6 +122,9 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/d/d0/5269657a74350",
             "extension": "jpg"
         }
+        ,
+        "group": "Avengers",
+        "appearances": 250
     },
     {
         "id": "1009718",
@@ -104,5 +134,8 @@
             "path": "http://i.annihil.us/u/prod/marvel/i/mg/2/60/537bcaef0f6cf",
             "extension": "jpg"
         }
+        ,
+        "group": "X-Men",
+        "appearances": 310
     }
 ]
