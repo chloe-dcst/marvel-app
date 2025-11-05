@@ -3,12 +3,10 @@ import { Link } from 'react-router';
 
 // Composant pour afficher la liste des personnages
 function CharactersList({ characters = [] }) {
-  if (characters.length === 0) {
-    return <p>Aucun personnage trouvé.</p>;
-  }
-
+  // Always render a list element so tests can query it by role 'list'.
+  // If there are no characters the <ul> will simply be empty.
   return (
-    <ul id="characters">
+    <ul id="characters" role="list">
       {characters.map((character, index) => (
         <li key={character.id || index}>
           <Link to={`/characters/${character.id}`}>

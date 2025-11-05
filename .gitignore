@@ -12,6 +12,7 @@ dist
 dist-ssr
 *.local
 coverage
+test-report.xml
 
 # Editor directories and files
 .vscode/*
