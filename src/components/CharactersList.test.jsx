@@ -3,6 +3,7 @@ import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
 import { MemoryRouter } from 'react-router';
 import CharactersList from './CharactersList';
+import characters from '../data/characters.json';
 
 	describe('CharactersList component', () => {
 
@@ -12,22 +13,20 @@ import CharactersList from './CharactersList';
 			expect(list).toBeEmptyDOMElement();
 		});
 
-		test('Affiche tous les personnages passés en paramètre', () => {
-			const characters = [
-				{ id: 1, name: 'Alpha' },
-				{ id: 2, name: 'Beta' },
-			];
+		test('Affiche tous les personnages passés en paramètre (fixture)', () => {
+			// use fixtures: take first two characters
+			const chars = characters.slice(0, 2).map(c => ({ id: c.id, name: c.name }));
 
 			render(
 				<MemoryRouter>
-					<CharactersList characters={characters} />
+					<CharactersList characters={chars} />
 				</MemoryRouter>
 			);
 
 			const items = screen.getAllByRole('listitem');
 			expect(items).toHaveLength(2);
-			expect(screen.getByText('Alpha')).toBeInTheDocument();
-			expect(screen.getByText('Beta')).toBeInTheDocument();
+			expect(screen.getByText(chars[0].name)).toBeInTheDocument();
+			expect(screen.getByText(chars[1].name)).toBeInTheDocument();
 		});
 
 	})
